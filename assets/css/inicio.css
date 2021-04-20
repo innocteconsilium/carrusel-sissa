@@ -1,0 +1,581 @@
+@font-face {
+  font-family: "Cabin";
+  src: url("../fonts/Cabin-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "MrDeHaviland";
+  src: url('../fonts/MrDeHaviland-Regular.ttf');
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    color:#ffffff9d;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(131, 131, 131, 0.37);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #ffffff9d;
+  }
+
+ .swiper-slide{
+   overflow: hidden;
+ }
+
+
+  .background-img{
+    background-image: url('../img/banner1.webp');    
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    animation-name: scale_bg;
+    animation-duration: 5000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+
+
+
+  @keyframes scale_bg {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+
+  .content-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .content-slide-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+  }
+  .content-slide-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+  }
+
+  .content-slide-img{
+    width: 75%;
+    height: auto;    
+  }
+  
+  @media(min-width:770px){
+    .content-slide{      
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .content-slide-left{
+      width: 50%;
+    }
+    .content-slide-right{
+      width: 50%;
+    }
+  }
+
+
+  /* BANNER ANIVERSARIO */
+
+  .banner-aniv-bg{
+    background-image: url('../img/banner-aniv-bg.webp');
+    animation-play-state: paused;
+  }
+  .swiper-slide-active .banner-aniv-bg{
+    animation-play-state: running;
+  } 
+
+   .banner-aniv-left{
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .banner-aniv-img{
+    width: 95%;
+    height: auto;
+
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-aniv-img{
+    animation: bounceInLeft;
+    animation-duration: 2.5s;
+  }
+  
+  .banner-aniv-text-1{
+    font-size: 9vw;
+    color: #fff;
+    font-family: 'MrDeHaviland', cursive;
+  }
+ 
+
+  .banner-aniv-text-2{
+    font-size: 6vw;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+  }
+
+
+  .banner-aniv-linetext-1{
+    visibility: visible;    
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-aniv-linetext-1{
+    animation: zoomIn;    
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 3.5s;
+    animation-delay: 0s;
+  }
+  .banner-aniv-linetext-2{
+    visibility: visible;
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-aniv-linetext-2{
+    animation: zoomIn;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 9.5s;
+    animation-delay: 0s;
+  }
+  .banner-aniv-linetext-3{
+    visibility: visible;
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-aniv-linetext-3{
+    animation: zoomIn;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 3.5s;
+    animation-delay: 0s;
+  }
+
+  .banner-aniv-linetext-4{
+    visibility: visible;
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-aniv-linetext-4{   
+    animation: zoomIn;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 9.5s;
+    animation-delay: 0s;
+  }
+
+
+  
+  @media(min-width:1024px){
+    .banner-aniv-left{     
+      justify-content: center;
+    }
+    .banner-aniv-right{     
+      justify-content: center;
+    }
+    .banner-aniv-img{
+      width: 75%;     
+    }
+    .swiper-slide-active .content-slide .content-slide-left .banner-aniv-img{
+      animation: bounceInUp;
+      animation-duration: 2.5s;
+    }
+    
+    .banner-aniv-text-1{
+      font-size: 6vw;
+    
+    }
+    .banner-aniv-text-2{
+      font-size: 3.5vw;
+    }
+  
+  }
+
+
+  /* BANNER SISSA INFRAESTUCTURA */
+  .banner-si-bg{
+    background-image: url('../img/banner-si-bg.webp');
+    animation-duration: 20s;
+    animation-play-state: paused;
+  }
+
+  .banner-si-right{
+    display: none;
+  }
+  .swiper-slide-active .banner-si-bg{
+    animation-play-state: running;
+  } 
+
+  .banner-si-left{    
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .banner-si-img{
+    width: 95%;
+    height: auto;
+
+  }
+
+  .banner-si-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .banner-si-logo img{
+    width: 70%;
+    
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-si-logo img{
+    animation: backInLeft;
+    animation-duration: 1.5s;    
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-si-logo img{
+    animation: backInLeft;
+    animation-duration: 1.5s;
+  }
+
+  .swiper-slide-active .content-slide .content-slide-right .banner-si-img{
+    animation: slideInUp;
+    animation-duration: 2.5s;
+  }
+  .banner-si-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  .banner-si-text-1{
+    font-size: 10vw;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+
+    background-color: rgb(226, 153, 70);
+    box-shadow: 0px 5px slategray ;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 0px;
+    
+    opacity: 0;
+    
+  } 
+
+  .banner-si-text-2{
+    font-size: 10vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+  .banner-si-text-3{
+    font-size: 10vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+
+  .swiper-slide-active .content-slide .content-slide-left .banner-si-text-1{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;    
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-si-text-2{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-si-text-3{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+  
+  @media(min-width:1024px){
+    
+    .banner-si-left{     
+      justify-content: space-between;
+      width: 50%;
+    }
+    .banner-si-logo{
+      justify-content: flex-start;
+    }
+    .banner-si-logo img{
+      width: 40%;
+      margin-left: 10%;
+    }
+    .banner-si-right{     
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 70px;
+    }
+    .banner-si-img{
+      width: 95%;
+     
+    }
+    .banner-si-text-1{
+      font-size: 3vw;
+    
+    }
+    .banner-si-text-2{
+      font-size: 3vw;
+    }
+    .banner-si-text-3{
+      font-size: 3vw;
+    }
+  
+  }
+  @media(min-width:1280px){
+    .banner-si-img{
+      width:85%;
+    }
+  }
+
+  @media(min-width:1280px){
+    .banner-si-img{
+      width:70%;
+    }
+  }
+
+
+
+  /* BANNER SISSA MONITORING */
+  .banner-sm-bg{
+    background-image: url('../img/banner-sm-bg.webp');
+    animation-duration: 20s;
+    animation-play-state: paused;
+  }
+
+  .banner-sm-left{
+    display: none;
+  }
+  .swiper-slide-active .banner-sm-bg{
+    animation-play-state: running;
+  } 
+
+  .banner-sm-left{    
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .content-slide-left .banner-sm-logo{
+    display: none;
+  }
+  .banner-sm-img{
+    width: 95%;
+    height: auto;
+
+  }
+
+  .banner-sm-logo{
+    width: 100%;
+  }
+  .banner-sm-logo img{
+    width: 70%;
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-sm-img{
+    animation: slideInUp;
+    animation-duration: 2.5s;
+  }
+
+  .banner-sm-right{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .banner-sm-right .logo-and-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .banner-sm-right .logo-and-text-container .banner-sm-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-slide-active .content-slide .banner-sm-right .logo-and-text-container .banner-sm-logo img{
+    animation:backInLeft;
+    animation-duration: 1.5s;
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-sm-logo img{
+    animation:backInLeft;
+    animation-duration: 1.5s;
+  }
+
+  .banner-sm-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  .banner-sm-text-1{
+    font-size: 8vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+
+    background-color: rgb(173, 28, 28);
+    box-shadow: -0.3rem 0.3rem rgb(141, 20, 20) ;
+    border-radius: 0.3rem;
+   
+    padding: 0.5rem 1rem;
+    
+    opacity: 0;
+    
+  } 
+
+  .banner-sm-text-2{
+    font-size: 6vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+  .banner-sm-text-3{
+    font-size: 5vw;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+
+  .swiper-slide-active .content-slide .banner-sm-right .logo-and-text-container .banner-sm-text-1{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;    
+  }
+  .swiper-slide-active .content-slide .banner-sm-right .logo-and-text-container .banner-sm-text-2{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+  .swiper-slide-active .content-slide .banner-sm-right .logo-and-text-container .banner-sm-text-3{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+  .banner-sm-right-bar{
+    width: 10%;    
+  }
+  .banner-sm-right-bar img{
+    visibility: hidden;  
+  }
+  .swiper-slide-active .content-slide .banner-sm-right .banner-sm-right-bar img{
+    animation: slideInRight;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  
+  @media(min-width:1024px){
+    
+    .banner-sm-left{     
+      justify-content: space-between;
+      width: 60%;
+      align-items: flex-start;
+    }
+    .banner-sm-left{     
+      display: flex;
+      justify-content: space-between;      
+    }
+    .content-slide-left .banner-sm-logo{
+      display: flex;
+      width: 50%;
+      margin-left: 10%;
+    }
+
+    .banner-sm-right{
+      width: 50%;
+    }
+    .banner-sm-right .logo-and-text-container .banner-sm-logo{
+      display: none;
+    }
+    .banner-sm-img{
+      width: 95%;
+     
+    }
+    .banner-sm-text-1{
+      font-size: 3vw;
+      box-shadow: -0.4rem 0.4rem rgb(141, 20, 20) ;
+      border-radius: 0.4rem;
+    }
+    .banner-sm-text-2{
+      font-size: 3vw;
+    }
+    .banner-sm-text-3{
+      font-size: 2.5vw;
+    }
+  
+  }
+  @media(min-width:1280px){
+    .banner-sm-img{
+      width:90%;
+    }
+    .banner-sm-text-3{
+      font-size: 3vw;
+    }
+  }
+
+  /* @media(min-width:1280px){
+    .banner-sm-img{
+      width:90%;
+    }
+  } */
+
+
+
+
+
+
+
+
+
