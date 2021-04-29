@@ -123,6 +123,11 @@
     background-image: url('../img/banner-aniv-bg-small.webp');
     animation-play-state: paused;
   }
+  @media(min-width:770px){
+    .banner-aniv-bg{
+      background-image: url('../img/banner-aniv-bg.webp');
+    }
+  }
   .swiper-slide-active .banner-aniv-bg{
     animation-play-state: running;
   } 
@@ -486,6 +491,7 @@
     font-size: 6vw;
     font-weight: 600;
     color: #fff;
+    text-shadow: #000 3px 3px 3px;
     font-family: 'Cabin', sans-serif;
     padding: 10px 0px;
     opacity: 0;
@@ -494,6 +500,7 @@
     font-size: 5vw;
     font-weight: 500;
     color: #fff;
+    text-shadow: #000 3px 3px 3px;
     font-family: 'Cabin', sans-serif;
     padding: 10px 0px;
     opacity: 0;
@@ -576,15 +583,379 @@
       width:90%;
     }
     .banner-sm-text-3{
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
   }
 
-  /* @media(min-width:1280px){
-    .banner-sm-img{
-      width:90%;
+
+
+
+  /* BANNER SISSA DIGITAL */
+  .banner-sd-bg{
+    background-image: url('../img/banner-sd-sm-bg.webp');
+    animation-duration: 20s;
+    animation-play-state: paused;
+  }
+  @media(min-width:770px){
+    .banner-sd-bg{
+      background-image: url('../img/banner-sd-bg.webp');
     }
-  } */
+  }
+
+  .banner-sd-right{
+    display: none;
+  }
+  .swiper-slide-active .banner-sd-bg{
+    animation-play-state: running;
+  } 
+
+  .banner-sd-left{    
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .banner-sd-img{
+    width: 95%;
+    height: auto;
+
+  }
+
+  .banner-sd-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 255, 255, 0.534);
+  }
+  .banner-sd-logo img{
+    width: 70%;
+    
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-sd-logo img{
+    animation: backInLeft;
+    animation-duration: 1.5s;    
+  }
+  .swiper-slide-active .content-slide .content-slide-right .banner-sd-logo img{
+    animation: backInLeft;
+    animation-duration: 1.5s;
+  }
+
+  .swiper-slide-active .content-slide .content-slide-right .banner-sd-img{
+    animation: slideInUp;
+    animation-duration: 2.5s;
+  }
+  .banner-sd-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+  }
+  .banner-sd-text-1{
+    font-size: 8vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+
+    background-color: #284b7d;
+    box-shadow: 0px 5px #123968 ;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 0px;
+    
+    opacity: 0;
+    
+  } 
+
+  .banner-sd-bottom{
+    padding: 15px;
+    background-color: #284b7dbb;
+  }
+  .banner-sd-text-2{
+    font-size: 4vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+  .banner-sd-text-3{
+    font-size: 3vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    padding: 10px 0px;
+    opacity: 0;
+  }
+
+  .swiper-slide-active .content-slide .content-slide-left .banner-sd-text-1{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;    
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-sd-text-2{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+  .swiper-slide-active .content-slide .content-slide-left .banner-sd-text-3{
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+  
+  @media(min-width:1024px){
+    
+    .banner-sd-left{     
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .banner-sd-logo{
+      justify-content: flex-start;
+      background-color: transparent;
+    }
+    .banner-sd-logo img{
+      width: 20%;
+      margin-left: 5%;
+    }
+    .banner-sd-right{     
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 70px;
+      margin-left: -50%;
+    }
+    .banner-sd-img{
+      width: 95%;
+     
+    }
+    .banner-sd-text-container{
+      align-items: flex-start;
+    }
+    .banner-sd-text-1{
+      font-size: 3vw;
+      padding: 3px 15px;
+      width: 30%;
+      margin-left: 5vw;
+    }
+
+    .banner-sd-bottom{
+      padding-left: 5vw;
+      width: 95vw;
+    }
+    .banner-sd-text-2{
+      font-size: 2vw;
+    }
+    .banner-sd-text-3{
+      font-size: 1.5vw;
+    }
+  
+  }
+
+
+  @media(min-width:1280px){
+    .banner-sd-img{
+      width:60%;
+    }
+  }
+
+
+/* BANNER SISSA Monitoring II */
+.banner-sm2-bg{
+  background-image: url('../img/banner-sm2-small-bg.webp');
+  animation-duration: 20s;
+  animation-play-state: paused;
+}
+@media(min-width:770px){
+  .banner-sm2-bg{
+    background-image: url('../img/banner-sm2-bg.webp');
+  }
+}
+
+.banner-sm2-right{
+  display: none;
+}
+.swiper-slide-active .banner-sm2-bg{
+  animation-play-state: running;
+} 
+
+.banner-sm2-left{    
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.banner-sm2-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.banner-sm2-logo img{
+  width: 70%;  
+}
+@media(min-width:768px){
+  .banner-sm2-logo img{
+    width: 50%;
+    
+  }
+}
+.swiper-slide-active .content-slide .content-slide-left .banner-sm2-logo img{
+  animation: backInLeft;
+  animation-duration: 1.5s;    
+}
+.swiper-slide-active .content-slide .content-slide-right .banner-sm2-logo img{
+  animation: backInRight;
+  animation-duration: 1.5s;
+}
+
+
+.banner-sm2-text-container-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  background-color: #991818;
+  box-shadow: -0.4rem 0.4rem rgb(141, 20, 20) ;
+  border-radius: 0.4rem;
+  padding:0px 1rem;
+}
+.banner-sm2-text-1{
+  font-size: 10vw;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3px 0px;  
+  opacity: 0;  
+} 
+
+.banner-sm2-text-2{
+  font-size: 6.5vw;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  padding: 3px 0px;
+  opacity: 0;
+}
+.banner-sm2-text-3{
+  font-size: 6vw;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  padding: 3px 0px;
+  opacity: 0;
+}
+
+.swiper-slide-active .content-slide .content-slide-left .banner-sm2-text-1{
+  animation: zoomIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;    
+}
+.swiper-slide-active .content-slide .content-slide-left .banner-sm2-text-2{
+  animation: zoomIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;  
+}
+.swiper-slide-active .content-slide .content-slide-left .banner-sm2-text-3{
+  animation: zoomIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;  
+}
+
+
+
+
+
+.banner-sm2-text-container-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  opacity: 0;
+}
+
+.banner-sm2-text-4{
+  font-size: 6vw;
+}
+.banner-sm2-text-5{
+  font-size: 5vw;
+}
+.banner-sm2-text-6{
+  font-size: 5vw;
+}
+
+.swiper-slide-active .content-slide .content-slide-left .banner-sm2-text-container-2{
+  animation: zoomIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards; 
+  animation-delay: 1s;   
+}
+
+
+@media(min-width:1024px){
+
+  .banner-sm2-left{     
+    width: 50%;
+    justify-content: center;
+  }
+  .banner-sm2-left .banner-sm2-logo{
+    display: none;
+  }
+
+  .banner-sm2-logo{
+    justify-content: flex-end;
+ 
+  }
+  .banner-sm2-logo img{
+    width: 30%;
+    margin-right: 10%;
+  }
+  .banner-sm2-right{     
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 70px;
+  }
+
+  .banner-sm2-text-container-1{
+    width:65%;
+    margin-bottom: 2rem;
+  }
+  .banner-sm2-text-1{
+    font-size: 3vw;
+  
+  }
+  .banner-sm2-text-2{
+    font-size: 2vw;
+  }
+  .banner-sm2-text-3{
+    font-size: 2vw;
+  }
+  .banner-sm2-text-4{
+    font-size: 2.5vw;
+  
+  }
+  .banner-sm2-text-5{
+    font-size: 2vw;
+  }
+  .banner-sm2-text-6{
+    font-size: 2vw;
+  }
+
+}
+
+@media(min-width:1280px){
+  .banner-sm2-img{
+    width:85%;
+  }
+}
 
 
 
@@ -592,5 +963,306 @@
 
 
 
+  /* BANNER SEA */
+  .banner-sea-bg{
+    background-image: url('../img/banner-sea-sm-bg.webp');
+    animation-duration: 20s;
+    animation-play-state: paused;
+  }
+  @media(min-width:770px){
+    .banner-sea-bg{
+      background-image: url('../img/banner-sea-bg.webp');
+    }
+  }
+
+  .banner-sea-left{
+    display: none;
+  }
+  .banner-sea-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #12396886;
+  }
+
+  .banner-sea-img{
+    width: 30%;
+  }
+
+  /* =========================================== */
+  .evento-sea-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .evento-sea-container .header-banner{
+    /* background-color: #991818 ; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .evento-sea-container .header-banner img{
+    width: 50%;
+  }
+
+  .banner-sea-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75% ;
+    justify-content: space-around;
+  }
 
 
+  .banner-sea-foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-sea-foto img{
+    width: 50%;
+    height: auto;
+  }
+
+  .banner-sea-foto-txt1{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+  }
+  
+  .banner-sea-foto-txt2{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+  }
+  
+  .banner-sea-foto-txt3{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+  }
+
+  .banner-sea-center-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-sea-center-text-1{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 5vw;
+  }
+  .banner-sea-center-text-2{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .banner-sea-center-text img{
+    display: none;
+  }
+
+  .banner-sea-qr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-sea-qr .qr-sea{
+    display: none;
+  }
+  .banner-sea-btn-registrate{
+    font-family: 'Cabin', sans-serif;
+    background-color: #991818;
+    color: #fff;
+    font-size: 4vw;
+    padding: 10px;
+    border-radius: 24px;  
+  }
+
+  
+
+  .banner-sea-fecha{
+    display: flex;
+    align-items: center;
+  }
+  .banner-sea-fecha-txt{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+  }
+  .banner-sea-fecha img{
+    width: 4vw;
+    height: auto;
+    margin-right: 2vw;
+  }
+
+  .banner-sea-hora{
+    display: flex;
+    align-items: center;
+  }
+  .banner-sea-hora-txt{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+  }
+  .banner-sea-hora img{
+    width: 4vw;
+    height: auto;
+    margin-right: 2vw;
+  }
+
+  .banner-sea-right-bar{
+    width: 10%;    
+  }
+  .banner-sea-right-bar img{
+    visibility: hidden;  
+  }
+  .swiper-slide-active .content-slide .banner-sea-right .banner-sea-right-bar img{
+    animation: slideInRight;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+
+
+@media(min-width:760px){
+  .evento-sea-container .header-banner img{
+    width: 40%;
+  }
+  .banner-sea-foto-txt1{
+    
+    font-size: 3vw;
+  }
+  
+  .banner-sea-foto-txt2{
+    
+    font-size: 3vw;
+  }
+  
+  .banner-sea-foto-txt3{
+    font-size: 3vw;
+  }
+  .banner-sea-center-text-1{  
+    font-size: 4vw;
+  }
+  .banner-sea-btn-registrate{
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+  .banner-sea-fecha-txt{
+    font-size: 2.5vw;
+  }
+  .banner-sea-hora-txt{
+    font-size: 2.5vw;
+  }
+
+}
+
+@media(min-width:1023px){
+  .banner-sea-left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 30%;
+  }
+  .banner-sea-right{ 
+    width: 70%;
+    flex-direction: row;
+  }
+  .evento-sea-container .header-banner img{
+    width: 25%;
+  }
+
+  .banner-sea-text-container{   
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .banner-sea-foto{
+    min-width: 25%;
+  }
+
+  .banner-sea-foto img{
+    width: 80%;
+    height: auto;
+  }
+
+  .banner-sea-foto-txt1{    
+    font-size: 1.5vw;
+    text-align: center;
+  }
+  
+  .banner-sea-foto-txt2{    
+    font-size: 1.5vw;
+    text-align: center;
+  }
+  
+  .banner-sea-foto-txt3{    
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .banner-sea-center-text{    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-width: 40%;
+  }
+
+  .banner-sea-center-text-1{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 2vw;
+  }
+  .banner-sea-center-text-2{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .banner-sea-center-text img{
+    display: flex;
+  }
+  .banner-sea-qr .qr-sea{
+    display: flex;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .banner-sea-btn-registrate{    
+    font-size: 2vw; 
+  }  
+
+   .banner-sea-fecha-txt{
+    font-size: 1.5vw;
+  }
+  .banner-sea-fecha img{
+    width: 2vw;
+  }
+
+
+  .banner-sea-hora-txt{
+    font-size: 1.5vw;
+  }
+  .banner-sea-hora img{
+    width: 2vw;
+  }
+
+}
+
+/* Termina banner SEA */
