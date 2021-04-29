@@ -120,7 +120,7 @@
   /* BANNER ANIVERSARIO */
 
   .banner-aniv-bg{
-    background-image: url('../img/banner-aniv-sm-bg.webp');
+    background-image: url('../img/banner-aniv-bg-small.webp');
     animation-play-state: paused;
   }
   @media(min-width:770px){
@@ -131,6 +131,11 @@
   .swiper-slide-active .banner-aniv-bg{
     animation-play-state: running;
   } 
+  @media(min-width:770px){
+    .banner-aniv-bg{
+      background-image: url('../img/banner-aniv-bg.webp');
+    }
+  }
 
    .banner-aniv-left{
     align-items: flex-end;
@@ -147,15 +152,15 @@
   }
   
   .banner-aniv-text-1{
-    font-size: 9vw;
-    color: #fff;
+    font-size: 12vw;
+    color: #754c24;
     font-family: 'MrDeHaviland', cursive;
   }
  
 
   .banner-aniv-text-2{
     font-size: 6vw;
-    color: #fff;
+    color: #ae8c5a;
     font-family: 'Cabin', sans-serif;
   }
 
@@ -220,7 +225,7 @@
     }
     
     .banner-aniv-text-1{
-      font-size: 6vw;
+      font-size: 9vw;
     
     }
     .banner-aniv-text-2{
@@ -232,7 +237,7 @@
 
   /* BANNER SISSA INFRAESTUCTURA */
   .banner-si-bg{
-    background-image: url('../img/banner-si-sm-bg.webp');
+    background-image: url('../img/banner-si-bg-small.webp');
     animation-duration: 20s;
     animation-play-state: paused;
   }
@@ -296,8 +301,8 @@
     font-family: 'Cabin', sans-serif;
     text-align: center;
 
-    background-color: rgb(226, 153, 70);
-    box-shadow: 0px 5px slategray ;
+    background-color: #d09120;
+    box-shadow: 0px 5px #4d4d4d ;
     border-radius: 5px;
     width: 100%;
     padding: 5px 0px;
@@ -392,7 +397,7 @@
 
   /* BANNER SISSA MONITORING */
   .banner-sm-bg{
-    background-image: url('../img/banner-sm-sm-bg.webp');
+    background-image: url('../img/banner-sm-bg-small.webp');
     animation-duration: 20s;
     animation-play-state: paused;
   }
@@ -472,8 +477,8 @@
     font-family: 'Cabin', sans-serif;
     text-align: center;
 
-    background-color: rgb(173, 28, 28);
-    box-shadow: -0.3rem 0.3rem rgb(141, 20, 20) ;
+    background-color: #991818;
+    box-shadow: -0.3rem 0.3rem #591111 ;
     border-radius: 0.3rem;
    
     padding: 0.5rem 1rem;
