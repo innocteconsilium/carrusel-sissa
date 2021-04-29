@@ -120,12 +120,12 @@
   /* BANNER ANIVERSARIO */
 
   .banner-aniv-bg{
-    background-image: url('../img/banner-aniv-bg.webp');
+    background-image: url('../img/banner-aniv-sm-bg.webp');
     animation-play-state: paused;
   }
   @media(min-width:770px){
-    .banner-sm-bg{
-      background-image: url('../img/banner-aniv-sm-bg.webp');
+    .banner-aniv-bg{
+      background-image: url('../img/banner-aniv-bg.webp');
     }
   }
   .swiper-slide-active .banner-aniv-bg{
@@ -232,13 +232,13 @@
 
   /* BANNER SISSA INFRAESTUCTURA */
   .banner-si-bg{
-    background-image: url('../img/banner-si-bg.webp');
+    background-image: url('../img/banner-si-sm-bg.webp');
     animation-duration: 20s;
     animation-play-state: paused;
   }
   @media(min-width:770px){
-    .banner-sm-bg{
-      background-image: url('../img/banner-si-sm-bg.webp');
+    .banner-si-bg{
+      background-image: url('../img/banner-si-bg.webp');
     }
   }
 
@@ -392,13 +392,13 @@
 
   /* BANNER SISSA MONITORING */
   .banner-sm-bg{
-    background-image: url('../img/banner-sm-bg.webp');
+    background-image: url('../img/banner-sm-sm-bg.webp');
     animation-duration: 20s;
     animation-play-state: paused;
   }
   @media(min-width:770px){
     .banner-sm-bg{
-      background-image: url('../img/banner-sm-sm-bg.webp');
+      background-image: url('../img/banner-sm-bg.webp');
     }
   }
 
@@ -486,6 +486,7 @@
     font-size: 6vw;
     font-weight: 600;
     color: #fff;
+    text-shadow: #000 3px 3px 3px;
     font-family: 'Cabin', sans-serif;
     padding: 10px 0px;
     opacity: 0;
@@ -494,6 +495,7 @@
     font-size: 5vw;
     font-weight: 500;
     color: #fff;
+    text-shadow: #000 3px 3px 3px;
     font-family: 'Cabin', sans-serif;
     padding: 10px 0px;
     opacity: 0;
@@ -576,28 +578,22 @@
       width:90%;
     }
     .banner-sm-text-3{
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
   }
 
-
-  /* @media(min-width:1280px){
-    .banner-sm-img{
-      width:90%;
-    }
-  } */
 
 
 
   /* BANNER SISSA DIGITAL */
   .banner-sd-bg{
-    background-image: url('../img/banner-sd-bg.webp');
+    background-image: url('../img/banner-sd-sm-bg.webp');
     animation-duration: 20s;
     animation-play-state: paused;
   }
   @media(min-width:770px){
-    .banner-sm-bg{
-      background-image: url('../img/banner-sd-sm-bg.webp');
+    .banner-sd-bg{
+      background-image: url('../img/banner-sd-bg.webp');
     }
   }
 
@@ -764,13 +760,13 @@
 
 /* BANNER SISSA Monitoring II */
 .banner-sm2-bg{
-  background-image: url('../img/banner-sm2-bg.webp');
+  background-image: url('../img/banner-sm2-small-bg.webp');
   animation-duration: 20s;
   animation-play-state: paused;
 }
 @media(min-width:770px){
-  .banner-sm-bg{
-    background-image: url('../img/banner-sm2-small-bg.webp');
+  .banner-sm2-bg{
+    background-image: url('../img/banner-sm2-bg.webp');
   }
 }
 
@@ -969,7 +965,7 @@
     animation-play-state: paused;
   }
   @media(min-width:770px){
-    .banner-sm-bg{
+    .banner-sea-bg{
       background-image: url('../img/banner-sea-bg.webp');
     }
   }
@@ -1264,3 +1260,4 @@
 
 }
 
+/* Termina banner SEA */
